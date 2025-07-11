@@ -17,6 +17,7 @@
     };
     initContent = ''
       fastfetch
+      export NH_NO_CHECKS=1;
 
       bindkey "^[[3~" delete-char
       bindkey "^[[1;5C" forward-word
@@ -45,7 +46,6 @@
       du = "dust";
       cd = "z";
       grep = "rg";
-      ping = "gping";
       tree = "eza -T";
     };
   };

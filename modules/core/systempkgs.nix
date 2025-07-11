@@ -1,9 +1,8 @@
 { pkgs, ... }:
 
 {
-  # programs.firefox.enable = true;
   nixpkgs.config.allowUnfree = true;
-  # nixpkgs.overlays = [ inputs.fenix.overlays.default ];
+  nix.package = pkgs.nixVersions.git;
   environment.systemPackages = with pkgs; [
     neovim
     wget
@@ -12,15 +11,7 @@
     fzf
     yazi
     vlc
+    termius
     mesa
-    # inputs.helix.packages."${pkgs.system}".helix
-    # (fenix.complete.withComponents [
-    #   "cargo"
-    #   "clippy"
-    #   "rust-src"
-    #   "rustc"
-    #   "rustfmt"
-    # ])
-    # rust-analyzer-nightly
   ];
 }

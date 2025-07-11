@@ -18,20 +18,18 @@
     # utils
     ripgrep # recursively searches directories for a regex pattern
     fzf # A command-line fuzzy finder
-    tree
     fastfetch
     fd
     eza
     bat
     bat-extras.batman
     du-dust
-    gping
     gearlever
+    cloudflared
 
     # misc
     file
     which
-    # tree
     gnused
     gnutar
     gawk
@@ -49,9 +47,7 @@
     nixfmt-rfc-style
     nil # nix language server
     nixd
-
-    # system monitoring
-    # bottom # rust based system monitoring
+    cachix
 
     # system tools
     lm_sensors # for `sensors` command
@@ -65,5 +61,6 @@
     # entertainment
     kazumi
     heroic
+    animeko
   ];
 }
